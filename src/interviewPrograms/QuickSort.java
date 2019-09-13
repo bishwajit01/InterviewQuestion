@@ -11,12 +11,21 @@ public class QuickSort {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int []arr = {10, 2, 30, 4, 50};
+		int[] arr = { 10, 2, 30, 4, 50 };
 		System.out.print("Unsorted Array::\t");
 		display(arr);
-		sort(arr, 0, arr.length-1);
+		sort(arr, 0, arr.length - 1);
 		System.out.print("Sorted  Array ::\t");
 		display(arr);
+	}
+
+	static void sort(int ar[], int low, int high) {
+		if (low < high) {
+			//calling partition method
+			int p = partition(ar, low, high);
+			sort(ar, low, p - 1);
+			sort(ar, p + 1, high);
+		}
 	}
 
 	static int partition(int arr[], int low, int high) {
@@ -35,14 +44,6 @@ public class QuickSort {
 		arr[high] = temp;
 
 		return i + 1;
-	}
-
-	static void sort(int ar[], int low, int high) {
-		if (low < high) {
-			int p = partition(ar, low, high);
-			sort(ar, low, p - 1);
-			sort(ar, p + 1, high);
-		}
 	}
 
 	static void display(int ar[]) {
