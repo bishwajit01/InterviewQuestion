@@ -8,10 +8,9 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @author Bishwajit.
- * Comparable is Single Sorting.
- * It uses compareTo method.
- * It affect the original class. It modifies the data of the original class.
+ * @author Bishwajit. Comparable is Single Sorting. It uses compareTo method. It
+ *         affect the original class. It modifies the data of the original
+ *         class.
  */
 public class ComparableDemo {
 
@@ -19,28 +18,28 @@ public class ComparableDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		List<Student> listStudent = new ArrayList<Student>();
+		List<Employee> listEmployee = new ArrayList<Employee>();
 
-		listStudent.add(new Student("A", 49, 90000L));
-		listStudent.add(new Student("B", 34, 24000L));
-		listStudent.add(new Student("C", 30, 56000L));
-		listStudent.add(new Student("D", 35, 69000L));
+		listEmployee.add(new Employee("Ram", 49, 90000L));
+		listEmployee.add(new Employee("Vikram", 34, 24000L));
+		listEmployee.add(new Employee("Khirod", 30, 56000L));
+		listEmployee.add(new Employee("Harish", 35, 69000L));
 
-		Collections.sort(listStudent);
+		Collections.sort(listEmployee);
 
-		for (Student student : listStudent) {
-			System.out.println(student.getName() + " " + student.getAge() + " " + student.getSal());
+		for (Employee employee : listEmployee) {
+			System.out.println(employee.getName() + " " + employee.getAge() + " " + employee.getSal());
 		}
 	}
 
 }
 
-final class Student implements Comparable<Student> {
+final class Employee implements Comparable<Employee> {
 	private String name;
 	private int age;
 	private long sal;
 
-	public Student(String name, int age, long sal) {
+	public Employee(String name, int age, long sal) {
 		this.name = name;
 		this.age = age;
 		this.sal = sal;
@@ -89,9 +88,9 @@ final class Student implements Comparable<Student> {
 	}
 
 	@Override
-	public int compareTo(Student student) {
+	public int compareTo(Employee employee) {
 		// TODO Auto-generated method stub
-		return this.age - student.age;
+		return this.age - employee.age;
 	}
 
 }
