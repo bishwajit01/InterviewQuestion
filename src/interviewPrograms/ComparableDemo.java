@@ -8,9 +8,11 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @author Bishwajit. Comparable is Single Sorting. It uses compareTo method. It
- *         affect the original class. It modifies the data of the original
- *         class.
+ * @author Bishwajit. 
+ * Comparable is Single Sorting.
+ * It uses compareTo method.
+ * It affect the original class.
+ * It modifies the data of the original class.
  */
 public class ComparableDemo {
 
