@@ -7,11 +7,13 @@ package concepts;
  * @author Bishwajit.
  *
  */
-// Make class final.
-// all methods as private.
-// no setter getter for the member variables.
-// member variable must be accessible only through constructor.
-
+/** 
+ * Make class final.
+ * All methods as private.
+ * No setter getter for the member variables.
+ * Member variable must be accessible only through constructor.
+ * Initialize all the fields via a constructor performing deep copy.
+ */
 public final class CreationImmutableClass {
 	private int number;
 	private byte[] name;
