@@ -1,10 +1,15 @@
-/**
- * 
- */
 package interviewPrograms;
 
 /**
  * @author Bishwajit.
+ * 
+ *         Pros:: 
+ *         1. Object is created only if it is needed.
+ *         2. Exception Handling is possible.
+ * 
+ *         Cons::
+ *         1. Every time a null check has to be done.
+ *         2. Instance can't be accessed directly. It's not thread safe.
  *
  */
 public class SingletonMain {
@@ -23,7 +28,6 @@ class Singleton {
 	int num = 0;
 
 	private Singleton() {
-		// TODO Auto-generated constructor stub
 		this.num = 24;
 	}
 
