@@ -12,7 +12,7 @@ public class CustomException {
 		try {
 			divide();
 		} catch (MyCustomException e) {
-			System.out.println("My exception" + e);
+			System.out.println("My exception :" + e);
 		}
 	}
 
