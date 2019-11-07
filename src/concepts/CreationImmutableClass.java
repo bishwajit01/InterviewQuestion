@@ -10,7 +10,7 @@ package concepts;
 /** 
  * Make class final.
  * All methods as private.
- * No setter getter for the member variables.
+ * No setter, Only getter for the member variables.
  * Member variable must be accessible only through constructor.
  * Initialize all the fields via a constructor performing deep copy.
  */
