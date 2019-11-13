@@ -39,6 +39,12 @@ public class ComparatorDemo {
 		System.out.println("Sorting By Roll Number::");
 		Collections.sort(listStudent, new RollNumberComparator());
 		display(listStudent);
+		System.out.println();
+		
+		// Reverse Order of Roll Number
+		System.out.println("Reverse Sorting By Roll Number::");
+		Collections.reverse(listStudent);
+		display(listStudent);
 	}
 
 	static void display(List<Student> list) {
