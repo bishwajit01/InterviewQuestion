@@ -46,6 +46,12 @@ final class Employee implements Comparable<Employee> {
 		this.age = age;
 		this.sal = sal;
 	}
+	
+	@Override
+	public int compareTo(Employee employee) {
+		// TODO Auto-generated method stub
+		return this.age - employee.age;
+	}
 
 	/**
 	 * @return the name
@@ -87,12 +93,6 @@ final class Employee implements Comparable<Employee> {
 	 */
 	public void setSal(long sal) {
 		this.sal = sal;
-	}
-
-	@Override
-	public int compareTo(Employee employee) {
-		// TODO Auto-generated method stub
-		return this.age - employee.age;
 	}
 
 }
