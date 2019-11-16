@@ -17,6 +17,8 @@ public class EqualsAndHashCode {
 			} else {
 				System.out.println("Both Object are not equal");
 			}
+		} else {
+			System.out.println("Both Object are not equal");
 		}
 	}
 
