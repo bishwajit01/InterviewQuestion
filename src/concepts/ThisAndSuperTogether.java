@@ -1,6 +1,3 @@
-/**
- * 
- */
 package concepts;
 
 /**
@@ -14,13 +11,4 @@ public class ThisAndSuperTogether {
 		// This and super cannot be called together.
 //		this();	// Compile Time Error.
 	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }
