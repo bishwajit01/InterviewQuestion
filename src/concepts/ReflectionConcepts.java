@@ -1,6 +1,3 @@
-/**
- * 
- */
 package concepts;
 
 import java.lang.reflect.Field;
