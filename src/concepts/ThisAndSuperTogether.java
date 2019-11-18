@@ -12,7 +12,7 @@ public class ThisAndSuperTogether {
 	public ThisAndSuperTogether() {
 		super();
 		// This and super cannot be called together.
-//		this();	
+//		this();	// Compile Time Error.
 	}
 
 	/**
