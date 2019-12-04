@@ -13,6 +13,7 @@ package interviewPrograms;
  *
  */
 public class SingletonMain {
+	
 	public static void main(String[] args) {
 		Singleton object1 = Singleton.getInstance();
 		Singleton object2 = Singleton.getInstance();
