@@ -25,7 +25,7 @@ public class ReverseEachWordInString {
 				reverseSentence +=  reverse + " ";
 			}
 		} catch (IOException e) {
-
+			System.out.println("Exception Occured" + e.toString());
 		}
 		System.out.println("Original Sentence :: " + s);
 		System.out.println("Reverse each word in Sentence :: " + reverseSentence.trim());
