@@ -13,7 +13,7 @@ public class HashMapImplementation {
 		myMap.put(new Employee1("3", "C", "3700"), 17);
 		myMap.put(new Employee1("4", "D", "3500"), 11);
 
-		// displaying my custom HashMap
+		// Displaying my custom HashMap
 		myMap.display();
 
 		// Displaying values with corresponding keys.
@@ -37,6 +37,7 @@ class Employee1 {
 	private String name;
 	private String sal;
 
+	// Employee Construtor
 	public Employee1(String id, String name, String sal) {
 		super();
 		this.id = id;
@@ -67,8 +68,8 @@ class Employee1 {
 
 class HashMapCustom<K, V> {
 
-	private Entry<K, V>[] table;
-	private int capacity = 4;
+	private Entry<K, V>[] table; // Array of Entry
+	private int capacity = 4; // Initial Capacity of map.
 
 	static class Entry<K, V> {
 		K key;
@@ -88,7 +89,7 @@ class HashMapCustom<K, V> {
 
 	public void put(K newKey, V newValue) {
 
-		if (newKey == null) {
+		if (newKey == null) { // No NULL allowed.
 			return;
 		}
 
