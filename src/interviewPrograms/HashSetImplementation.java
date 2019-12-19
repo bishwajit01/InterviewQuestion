@@ -2,9 +2,9 @@ package interviewPrograms;
 
 public class HashSetImplementation {
 	public static void main(String[] args) {
-		
+
 		HashSetImplementationCustom<Employee3> set = new HashSetImplementationCustom<Employee3>();
-		
+
 		// Adding Employee Object.
 		set.add(new Employee3("1", "Bishwajit", "20000"));
 		set.add(new Employee3("2", "Vikram", "30000"));
@@ -21,7 +21,7 @@ public class HashSetImplementation {
 		System.out.println("HashSetCustom contains 4 = " + set.contains(new Employee3("4", "Kashyap", "50000")));
 		System.out.println("HashSetCustom contains 3 = " + set.contains(new Employee3("3", "Anushree", "40000")));
 		System.out.println("HashSetCustom contains 7 = " + set.contains(new Employee3("7", "Anushree", "40000")));
-		
+
 		// Removing the Employee from the set.
 		set.remove(new Employee3("3", "Anushree", "40000"));
 		System.out.print("SET after removing : ");
