@@ -2,7 +2,10 @@ package interviewPrograms;
 
 public class HashSetImplementation {
 	public static void main(String[] args) {
+		
 		HashSetImplementationCustom<Employee3> set = new HashSetImplementationCustom<Employee3>();
+		
+		// Adding Employee Object.
 		set.add(new Employee3("1", "Bishwajit", "20000"));
 		set.add(new Employee3("2", "Vikram", "30000"));
 		set.add(new Employee3("3", "Anushree", "40000"));
