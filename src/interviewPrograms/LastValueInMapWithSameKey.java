@@ -18,13 +18,13 @@ public class LastValueInMapWithSameKey {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Map<String, String> map = new HashMap<String, String>();
-		Object first = map.put("Vikram", "Bishwajit");
-		Object second = map.put("Vikram", "java");
-		Object third = map.put("Vikram", "Computer");
+		String first = map.put("Vikram", "Bishwajit");
+		String second = map.put("Vikram", "java");
+		String third = map.put("Vikram", "Computer");
 
-		System.out.println(">>" + first);
-		System.out.println(">>" + second);
-		System.out.println(">>" + third);
+		System.out.println("First Time  :: " + first);
+		System.out.println("Second Time :: " + second);
+		System.out.println("Third Time  :: " + third);
 	}
 
 }
