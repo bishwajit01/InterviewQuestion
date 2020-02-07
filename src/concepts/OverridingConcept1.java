@@ -6,6 +6,7 @@ package concepts;
  *
  */
 public class OverridingConcept1 {
+	
 	public static void main(String[] args) {
 		Parent1 p = new Child1();
 		p.eat();
