@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Use java streams to filter out the talents with certification and print the skills in sorted order.
+ * Question2
+ */
 public class Question2 {
     static class Talent {
         private String skills;
